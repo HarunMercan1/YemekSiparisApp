@@ -20,7 +20,8 @@ class YemekRepository {
         final List<dynamic> jsonList = data["yemekler"];
         return jsonList.map((e) => Yemek.fromJson(e)).toList();
       } else {
-        throw Exception("Sunucudan beklenmeyen cevap kodu: ${response.statusCode}");
+        throw Exception(
+            "Sunucudan beklenmeyen cevap kodu: ${response.statusCode}");
       }
     } catch (e) {
       throw Exception("Tum yemekleri getirirken hata olustu: $e");
@@ -46,6 +47,9 @@ class YemekRepository {
           "yemek_siparis_adet": yemekSiparisAdet,
           "kullanici_adi": kullaniciAdi,
         },
+        options: Options(
+          headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        ),
       );
     } catch (e) {
       throw Exception("Sepete yemek eklenemedi: $e");
@@ -58,14 +62,24 @@ class YemekRepository {
       final response = await _dio.post(
         ApiUrls.sepettekiYemekler,
         data: {"kullanici_adi": kullaniciAdi},
+        options: Options(
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        ),
       );
 
-      final List<dynamic> jsonList = response.data["sepet_yemekler"] ?? [];
+      final data = response.data is String
+          ? jsonDecode(response.data)
+          : response.data;
+
+      final List<dynamic> jsonList = data["sepet_yemekler"] ?? [];
       return jsonList.map((e) => Yemek.fromJson(e)).toList();
     } catch (e) {
       throw Exception("Sepet getirilemedi: $e");
     }
   }
+
 
   // 🔹 4. Sepetten yemek sil
   Future<void> sepettenYemekSil({
@@ -73,13 +87,22 @@ class YemekRepository {
     required String kullaniciAdi,
   }) async {
     try {
-      await _dio.post(
+      final formData = FormData.fromMap({
+        "sepet_yemek_id": sepetYemekId.toString(), // ⚠️ string olarak gönder
+        "kullanici_adi": kullaniciAdi,
+      });
+
+      final response = await _dio.post(
         ApiUrls.sepettenYemekSil,
-        data: {
-          "sepet_yemek_id": sepetYemekId,
-          "kullanici_adi": kullaniciAdi,
-        },
+        data: formData,
+        options: Options(
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        ),
       );
+
+      print("🧾 Silme cevabı: ${response.data}");
     } catch (e) {
       throw Exception("Sepetten silinemedi: $e");
     }

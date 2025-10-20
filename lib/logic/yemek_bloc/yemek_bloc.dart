@@ -51,6 +51,10 @@ class YemekBloc extends Bloc<YemekEvent, YemekState> {
           sepetYemekId: event.sepetYemekId,
           kullaniciAdi: event.kullaniciAdi,
         );
+        // Silme sonrası sepeti tazele
+        emit(YemekYukleniyor());
+        final sepet = await _repo.sepettekiYemekleriGetir(event.kullaniciAdi);
+        emit(SepetYuklendi(sepet));
       } catch (e) {
         emit(YemekHata(e.toString()));
       }

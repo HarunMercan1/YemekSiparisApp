@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:repoyukle/presentation/screens/sepet_sayfasi.dart';
 import '../../logic/yemek_bloc/yemek_bloc.dart';
 import '../../logic/yemek_bloc/yemek_event.dart';
 import '../../logic/yemek_bloc/yemek_state.dart';
@@ -21,11 +22,19 @@ class Anasayfa extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.shopping_cart),
               onPressed: () {
-                Navigator.pushNamed(context, "/sepet");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SepetSayfasi(
+                      kullaniciAdi: "harun_mercan",
+                    ),
+                  ),
+                );
               },
             ),
           ],
         ),
+
 
         body: BlocBuilder<YemekBloc, YemekState>(
           builder: (context, state) {
