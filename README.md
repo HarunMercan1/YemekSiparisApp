@@ -14,7 +14,7 @@ Kullanıcılar menüdeki ürünleri görüntüleyebilir, detay sayfasına gidebi
 
 | Ana Sayfa | Ürün Detayı | Sepet |
 |------------|--------------|--------|
-| <img src="assets/Screenshot_1760686680.png" width="250"> | <img src="assets/Screenshot_1760686685.png" width="250"> | <img src="assets/Screenshot_1760686687.png" width="250"> |
+| <img src="assets/ana.png" width="250"> | <img src="assets/detay.png" width="250"> | <img src="assets/sepet.png" width="250"> |
 
 ## 🛠️ Kullanılan Teknolojiler
 - Flutter  
@@ -24,4 +24,4 @@ Kullanıcılar menüdeki ürünleri görüntüleyebilir, detay sayfasına gidebi
 **Harun Mercan**  
 [GitHub Profilim](https://github.com/HarunMercan1)
 
-Sürüm 1.0
+Sürüm 2.0
