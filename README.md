@@ -1,7 +1,7 @@
 # 🍔 YemekSiparisApp
 
 Flutter ile geliştirilen modern bir yemek sipariş uygulaması.  
-Kullanıcılar menüdeki ürünleri görüntüleyebilir, detay sayfasına gidebilir ve sepetlerine ekleme işlemleri yapabilirler.
+Kullanıcılar menüdeki ürünleri görüntüleyebilir, detay sayfasına gidebilir ve sepete ekleme işlemi yapabilirler.
 
 ## 🚀 Özellikler
 - Ürün listeleme  
