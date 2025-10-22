@@ -14,7 +14,7 @@ Kullanıcılar menüdeki ürünleri görüntüleyebilir, detay sayfasına gidebi
 
 | Ana Sayfa | Ürün Detayı | Sepet |
 |------------|--------------|--------|
-| <img src="assets/2.1/5.png" width="250"> | <img src="assets/2.0/detay.png" width="250"> | <img src="assets/2.1/4.png" width="250"> |
+| <img src="assets/2.1.2/ana.png" width="250"> | <img src="assets/2.0/detay.png" width="250"> | <img src="assets/2.1.2/sepet.png" width="250"> |
 
 ## 🛠️ Kullanılan Teknolojiler
 - Flutter  
