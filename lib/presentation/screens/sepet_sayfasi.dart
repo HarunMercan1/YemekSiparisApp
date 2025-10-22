@@ -20,7 +20,6 @@ class SepetSayfasi extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text("Sepetim 🛍️"),
-          backgroundColor: Colors.deepOrange,
         ),
         body: BlocBuilder<YemekBloc, YemekState>(
           builder: (context, state) {
@@ -98,7 +97,6 @@ class SepetSayfasi extends StatelessWidget {
                         ),
                         ElevatedButton.icon(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.deepOrange,
                             padding: const EdgeInsets.symmetric(
                                 horizontal: 24, vertical: 12),
                           ),

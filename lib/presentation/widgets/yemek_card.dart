@@ -49,7 +49,7 @@ class YemekCard extends StatelessWidget {
             style: const TextStyle(color: Colors.grey, fontSize: 16),
           ),
           trailing: IconButton(
-            icon: const Icon(Icons.add_shopping_cart, color: Colors.deepOrange),
+            icon: const Icon(Icons.add_shopping_cart, color: Colors.redAccent),
             onPressed: () {
               context.read<YemekBloc>().add(
                 SepeteYemekEkleEvent(

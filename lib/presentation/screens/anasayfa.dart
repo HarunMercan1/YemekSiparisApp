@@ -17,7 +17,6 @@ class Anasayfa extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text("Yemek Sipariş Uygulaması 🍔"),
-          backgroundColor: Colors.deepOrange,
         ),
 
 

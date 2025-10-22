@@ -30,7 +30,6 @@ class _YemekDetaySayfasiState extends State<YemekDetaySayfasi> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(widget.yemek.yemekAdi),
-          backgroundColor: Colors.deepOrange,
         ),
         body: Padding(
           padding: const EdgeInsets.all(16),
@@ -68,7 +67,6 @@ class _YemekDetaySayfasiState extends State<YemekDetaySayfasi> {
                   "${widget.yemek.yemekFiyat} ₺",
                   style: const TextStyle(
                     fontSize: 22,
-                    color: Colors.deepOrange,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -81,7 +79,6 @@ class _YemekDetaySayfasiState extends State<YemekDetaySayfasi> {
                     IconButton(
                       icon: const Icon(Icons.remove_circle_outline),
                       iconSize: 36,
-                      color: Colors.deepOrange,
                       onPressed: () {
                         if (adet > 1) setState(() => adet--);
                       },
@@ -96,7 +93,6 @@ class _YemekDetaySayfasiState extends State<YemekDetaySayfasi> {
                     IconButton(
                       icon: const Icon(Icons.add_circle_outline),
                       iconSize: 36,
-                      color: Colors.deepOrange,
                       onPressed: () {
                         setState(() => adet++);
                       },
@@ -111,7 +107,6 @@ class _YemekDetaySayfasiState extends State<YemekDetaySayfasi> {
                   width: double.infinity,
                   child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepOrange,
                       padding: const EdgeInsets.symmetric(
                         horizontal: 40,
                         vertical: 16,
