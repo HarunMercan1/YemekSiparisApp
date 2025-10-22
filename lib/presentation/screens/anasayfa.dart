@@ -18,21 +18,6 @@ class Anasayfa extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Yemek Sipariş Uygulaması 🍔"),
           backgroundColor: Colors.deepOrange,
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.shopping_cart),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const SepetSayfasi(
-                      kullaniciAdi: "harun_mercan",
-                    ),
-                  ),
-                );
-              },
-            ),
-          ],
         ),
 
 

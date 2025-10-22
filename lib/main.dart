@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:repoyukle/presentation/screens/ana_ekran.dart';
 import 'presentation/screens/anasayfa.dart';
+import 'presentation/screens/ana_ekran.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: const Anasayfa(),
+      home: const AnaEkran(),
     );
   }
 }
