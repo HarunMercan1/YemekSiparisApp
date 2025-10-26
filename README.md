@@ -1,4 +1,4 @@
-# 🍽️ Yemek Sipariş Uygulaması (Flutter + BLoC Pattern)
+# 🍽️ Yemek Sipariş Uygulaması
 
 Bu proje, **Flutter** framework’ü kullanılarak geliştirilmiş bir **Yemek Sipariş Mobil Uygulamasıdır.**  
 Uygulama, gerçek bir REST API üzerinden yemek verilerini çeker, kullanıcıların ürünleri sepete eklemesine, sepeti görüntülemesine ve sipariş işlemini tamamlamasına olanak tanır.
