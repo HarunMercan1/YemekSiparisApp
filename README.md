@@ -64,11 +64,6 @@ Proje, **Clean Architecture + BLoC Pattern** prensiplerine göre yapılandırıl
 
 ---
 
-📱 API Bilgisi
-
-API: http://kasimadalan.pe.hu/yemekler/
-
-
 ## ✨ Geliştirici
 
 👨‍💻 Harun Reşit Mercan
