@@ -4,7 +4,6 @@ Bu proje, **Flutter** framework’ü kullanılarak geliştirilmiş bir **Yemek S
 Uygulama gerçek bir REST API üzerinden yemek verilerini çeker, kullanıcıların ürünleri sepete eklemesine, sepeti görüntülemesine ve sipariş işlemini tamamlamasına olanak tanır.
 
 ---
-
 ## 🚀 Özellikler
 
 ✅ **BLoC Pattern (State Management):**  
