@@ -47,7 +47,6 @@ Proje, **Clean Architecture + BLoC Pattern** prensiplerine göre yapılandırıl
 |------------|--------------|--------|
 | <img src="assets/2.1.2/ana.png" width="250"> | <img src="assets/2.1.2/detay.png" width="250"> | <img src="assets/2.1.2/sepet.png" width="250"> |
 
-
 ---
 
 ## 💡 Kullanılan Teknolojiler
