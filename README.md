@@ -39,7 +39,6 @@ Kullanıcı işlemleri sonrası bilgilendirici mesajlar.
 
 Proje, **Clean Architecture + BLoC Pattern** prensiplerine göre yapılandırılmıştır.
 
-
 ## 📸 Ekran Görüntüleri
 
 | Ana Sayfa | Ürün Detayı | Sepet |
